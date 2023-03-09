@@ -3,7 +3,7 @@ function validateForm() {
     let mobile = document.forms["myForm"]["mobile"].value;
 
     let mobileRegex = /^[1-9]\d{9}$/;
-    let dateRegex = /^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/;
+    let dateRegex = /^[0-9]\d{1,2}\/[0-9]\d{1,2}\/[0-9]\d{4}$/;
 
     if (!dateRegex.test(date)) {
         alert("Please enter a valid date in DD-MM-YYYY format.");
