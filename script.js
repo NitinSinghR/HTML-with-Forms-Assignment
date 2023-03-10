@@ -5,7 +5,7 @@ const validateForm=()=> {
     let email = document.forms["myForm"]["email"].value;
     let mobile = document.forms["myForm"]["mobile"].value;
 
-    let emailRegex = /^\S+@\S+\.\S+$/;
+   let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     let mobileRegex = /^[1-9]\d{9}$/;
 
     if(name=="" || name.length<4){    
